@@ -29,6 +29,27 @@ int passCnt=0;
 		assertEquals(true,email.period());
 	}
 	
+	@Test
+	public void testSpace() {
+		System.out.println("Testing for no spaces :");
+		assertEquals(false,email.spaceCheck());
+		 
+			
+		
+	}
+		
+			
+		
+	@Test
+	public void testLength() {
+		System.out.println("Testing for 320 characters or less :");
+		assertEquals(true,email.lengthCheck());
+		 
+			
+		
+
+		
+	}
 
 
 }
